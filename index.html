@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial scale=1.0">
+        <title> My Portfolio </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Sulphur+Point&display=swap" rel="stylesheet">
+    </head>
+    <body>
+<section class="header">
+<nav>
+    <a href="index.html"><img src="./img/logof.png"></a>
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li><a class="nav-links" href="index.html">Home</a></li>
+            <li><a class="nav-links" href="profile.html">Profile</a></li>
+            <li><a class="nav-links" href="about.html">About</a></li>
+            <li><a class="nav-links" href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+
+
+<div class="text-box">
+    <h4>Hi, I'm <span>Rhiz</span>!</h4> 
+    <h1><span>W</span>EB <span>D</span>EVELOPER</h1>
+     <h4>A dedicated web developer with a strong eye for design and a passion<br />  for creating responsive, user-friendly websites. </h4>
+
+</div>
+<div class="image">
+<img src="./img/bow.png" class="girl">
+</div>
+
+</section>
+
+
+
+
+<section class="footer">
+    <h4>© 2025 - Web Development. All rights reserved.</h4>
+</section>
+
+<!-------- JavaScript for Toggle Menu -------->
+<script>
+
+var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+    navLinks.style.right="0";
+}
+function hideMenu(){
+    navLinks.style.right="-200px";
+}
+
+</script>
+
+    </body>
+</html>     
